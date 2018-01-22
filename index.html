@@ -726,9 +726,9 @@
 //								console.log(temp_targetdate.getMinutes()+i*10);
 								//注意此处若接收setMinutes的返回值会得到一个长整型
 								//var temp_date= temp_targetdate.setMinutes(temp_targetdate.getMinutes()*i);
-								temp_targetdate.setMinutes(temp_targetdate.getMinutes()+10);
+								var temmp_date_str=temp_targetdate.setMinutes(temp_targetdate.getMinutes()+10);
 								
-								var temp_date=temp_targetdate;
+								var temp_date=new Date(temmp_date_str);
 //								temp_date=new Date(temp_targetdate.getYear(),temp_targetdate.get)
 								console.log(temp_date);
 								list.push(temp_date);
